@@ -1,0 +1,25 @@
+{
+    "app": "sample",
+    "version": {
+        "major": 0,
+        "minor": 0,
+        "build": 252,
+        "hash": "c5129b2c77873ed9132fecc3903f2f10aff5c795fb18c9d9b81e91fdec3ca25a",
+        "date": "2022-01-12T00:34:10.8832955+01:00"
+    },
+    "include": [
+        "apps/geoip",
+        "apps/myapp",
+        "apps/override",
+        "github.com/getevo/evo-ng/apps/redis",
+        "github.com/getevo/evo-ng/apps/message"
+    ],
+    "replace": {
+        "github.com/getevo/evo-ng":"../../evo-ng"
+    },
+    "hot_reload": true,
+    "debug": true,
+    "config": [
+        "./config.yml"
+    ]
+}

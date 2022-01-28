@@ -1,0 +1,8 @@
+.idea
+.vscode
+*.exe
+*.sqlite
+vendor
+go.mod
+go.sum
+http

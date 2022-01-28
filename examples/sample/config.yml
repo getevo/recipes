@@ -1,0 +1,39 @@
+web_server:
+    bind: 0.0.0.0
+    port: "8080"
+    strict_routing: false
+    server_header: evo-ng
+    etag: true
+    recover: true
+    body_limit: 4mb
+    proxy_header: ""
+    disable_keepalive: false
+    disable_pre_parse_multipart_form: false
+    static_dir:
+        - ./web
+    debug: true
+
+
+database:
+    enabled: true
+    dialect: "sqlite"
+    dsn: "db.sqlite"
+    replicas: []
+    table_prefix: ""
+    skip_default_transaction: false
+    full_save_associations: true
+    disable_automatic_ping: false
+    disable_foreign_key_constraint_when_migrating: false
+    stmt_cache: true
+    disable_nested_transaction: false
+    create_batch_size: 100
+    query_fields: true
+    debug: false
+    max_open_connections: 100
+    max_idle_connections: 10
+    connection_max_lifetime: 1h
+    connection_max_idle_time: 1h
+
+redis:
+    server: ["127.0.0.1:6379"]
+    app_id: sample
